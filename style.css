@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    max-width: 720px;
+    margin: 30px auto;
+}
+
+header {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+
+header:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 6px 7px -2px rgba(34, 60, 80, 0.09);
+    transition: 0.3s ease;
+}
+
+.title {
+    cursor: default;
+}
+
+
+.add-project {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: large;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.add-project:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.status {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.status:hover {
+    box-shadow: 0px 6px 7px -2px rgba(34, 60, 80, 0.09);
+    transition: 0.3s ease;
+}
+
+.status-button {
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    margin: 0 10px;
+    background: none;
+}
+
+.status-button:hover {
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 10px;
+}
+
+.project-card {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.project-card:hover {
+
+    background: aliceblue;
+    
+    transition: 0.3s;
+}
+
+.project-card h3 {
+    font-weight: 700;
+}
+
+.project-card p {
+    font-weight: 400;
+}
+
+.project-card button {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: small;
+}
+
+.project-card button:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.new-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 150px;
+}
+
+.task-title {
+    border: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.task-body {
+    border: none;
+    background: transparent;
+    padding: 5px;
+}
+
+img {
+    width: 24px;
+}
+
+.delete {
+    width: 19px;
+    margin-bottom: 2px;
+}
